@@ -1,0 +1,11 @@
+<div class="container mt-4">
+  <div class="col-5 mx-auto">
+    <ul class="list-group list-group-flush" *ngFor="let quote of quotesList">
+      <li class="list-group-item">{{quote?.character?.name}} : {{quote.sentence}}</li>
+    </ul>
+    <div class="text-center mt-3">
+    <a class="btn btn-primary" (click)="getRandomQuotes()">Replace quotes</a>
+  </div>
+  </div>
+</div>
+
