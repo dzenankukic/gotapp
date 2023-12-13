@@ -1,0 +1,9 @@
+<div class="container mt-5">
+  <div class="col-5 mx-auto">
+    <app-search-bar (searchQuery)="onSearch($event)"></app-search-bar>
+    <ul class="list-group list-group-flush" *ngFor="let house of filteredHouses">
+      <a class="list-group-item" [routerLink]="['/house', house.slug]" routerLinkActive="router-link-active" >{{house.name}}</a>
+    </ul>
+  </div>
+</div>
+

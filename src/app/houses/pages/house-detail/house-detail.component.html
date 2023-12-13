@@ -1,0 +1,10 @@
+<div class="container mt-5">
+  <div class="col-5 mx-auto">
+<li class="list-group-item">House name: {{house?.name}}</li>
+<li class="list-group-item">House slug: {{house?.slug}}</li>
+<li class="list-group-item">Members: </li>
+<ul class="list-group" *ngFor="let member of house?.members">
+  <li class="list-group-item">{{member?.name}}</li>
+</ul>
+</div>
+</div>
